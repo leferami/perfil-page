@@ -1,0 +1,129 @@
+<div class="p-grid p-justify-center">
+    <div class="p-col-8 ui-fluid">
+        <h3>Editar perfil</h3>
+    </div>
+</div>
+
+<form [formGroup]="form" (ngSubmit)="saveEditarPerfil()">
+    <div class="p-grid p-justify-center">
+    <div class="p-col-8 ui-fluid">
+        <div class="p-field">
+            <label>Nombre</label>
+            <input  type="text" formControlName="nombre" size="30" pInputText> 
+        </div>
+        <div class="p-field">
+            <label >Apellidos</label>
+                <input  type="text" formControlName="apellidos" size="30" pInputText> 
+        </div>
+
+        <div class="p-formgrid p-grid">
+            <div class="p-field p-col">
+                <label>Cedula de identidad: </label>
+                <input  type="number" formControlName="cedula" size="30" pInputText> 
+            </div>
+            <div class="p-field p-col">
+                <label>Mail principal</label>
+                <input  type="email" formControlName="mail_principal" size="30" pInputText> 
+            </div>
+        </div>
+        
+        <div  class="p-formgrid p-grid">
+            <div class="p-field p-col">
+                <label>Tipo usuario</label>
+                <input  type="text" formControlName="tipo_usuario" size="30" pInputText> 
+            </div>
+            <div class="p-field p-col">
+                <label>Edad</label>
+                 <input  type="number" formControlName="edad" size="30" pInputText> 
+            </div>
+        </div>
+        
+        <div class="p-formgrid p-grid"> 
+            <div class="p-field p-col">
+                <label>Codigo Externo</label>
+                <input  type="number" formControlName="codigo_externo" size="30" pInputText> 
+            </div>
+            <div class="p-field p-col">
+                <label>Codigo</label>
+                <input  type="number" formControlName="codigo" size="30" pInputText> 
+            </div>
+        </div>
+
+        <div class="p-formgrid p-grid">    
+            <div class="p-field p-col">
+                <label>Telefono Celular</label>
+                <input  type="number" formControlName="telefono_celular" size="30" pInputText> 
+            </div>
+            <div class="p-field p-col">
+                <label>Cedula</label>
+                <input  type="number" formControlName="cedula" size="30" pInputText> 
+            </div>
+        </div>
+
+        <div class="p-field">
+            <label>Razon Social</label>
+            <input  type="text" formControlName="razon_social" size="30" pInputText> 
+        </div>
+        
+        <div class="p-field">
+            <label>Direcion Principal</label>
+            <input  type="text" formControlName="direccion_principal" size="30" pInputText> 
+        </div>
+        
+        <div class="p-field">
+            <label>Nombre Comercial</label>
+            <input  type="text" formControlName="nombre_comercial" size="30" pInputText> 
+        </div>
+
+        <div class="p-fluid p-formgrid p-grid"> 
+            <div class="p-field p-col">
+                <label>Telefono Celular 1</label>
+                <input  type="number" formControlName="telefono_celular1" size="30" pInputText> 
+            </div>
+            <div class="p-field p-col">
+                <label>Telefono Celular 2</label>
+                <input  type="number" formControlName="telefono_celular2" size="30" pInputText> 
+            </div>
+        </div>
+        
+        <div class="p-fluid p-formgrid p-grid"> 
+            <div class="p-field p-col">
+                <label>Fecha de Nacimiento</label>
+                <input  type="date" formControlName="fecha_nacimiento" size="30" pInputText> 
+            </div>
+            
+            <div class="p-field p-col">
+                <div class="p-fluid p-formgrid p-grid">  
+               <div class="p-field p-col">    
+                <label>Estado civil</label><br>
+                <select formControlName="estado_civil" class="stilo-select">
+                    <option value="Soltero">Soltero</option>
+                    <option value="Casado">Casado</option>
+                    <option value="Casado">Divorciado</option>
+                    <option value="Casado">Viudo</option>
+                </select> 
+           </div>
+           <div class="p-field p-col">
+                <label>Sexo</label><br>
+                <select formControlName="sexo" class="stilo-select">
+                    <option value="M">Mujer</option>
+                    <option value="H">Hombre</option>
+                </select>
+            </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-fluid p-formgrid p-grid"> 
+        <div class="p-field p-col">
+            <button pButton type="button" icon="pi pi-save" iconPos="left" label="Guardar" class="ui-button-rounded ui-button-danger" type="submit" ></button>
+        </div>
+        <div class="p-field p-col">
+            <a routerLink="/ver-perfil">
+                <button pButton type="button" icon="pi pi-directions-alt" iconPos="left" label="Salir" class="ui-button-rounded ui-button-primary" ></button>
+            </a> 
+         </div>   
+        </div>
+    </div>
+</div>
+</form>
+

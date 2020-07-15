@@ -1,0 +1,43 @@
+.div-colum{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.text-padding{
+    padding-right: 45px;
+}
+
+.item-avatar  {     
+    width:120% !important;  
+    height : 120% !important;  
+    max-width: 120px !important;  
+    max-height: 120px !important; 
+  
+    }
+    
+  .card .icon-big {
+    font-size: 3rem;
+  }
+  
+  .card .icon-big .notif {
+    position: absolute;
+    margin-top: 5px;
+    min-width: 25px;
+    border-radius: 5rem;
+    font-size: 1rem;
+    background: #dc3545;
+    color: #fff;
+  }
+  
+  .card .numbers {
+    text-align: right;
+  }
+  
+  .card .numbers p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  
+ 
+  
